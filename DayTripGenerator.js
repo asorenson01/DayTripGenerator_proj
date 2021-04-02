@@ -132,10 +132,6 @@ function pickTransportation(anArray,message){
      }
  
 
-
-
-
-
 pickDestination(destinationArray,"Destination");
 pickRestaurant(restaurantArray, "Restaurant");
 pickTransportation(transportationArray,"Transportation");
