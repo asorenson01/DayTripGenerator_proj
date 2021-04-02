@@ -1,7 +1,7 @@
 "use strict"
 //list of Arrays
 let destinationArray = ["Pet Store", "Safco Field", "Hawaii", "Doctors Office", "Grocery Store", "Car Lot"];
-let restaurantArray = ["McDonalds", "I'm Really Not Hungry", "Applebee's", "Ruth Chris Steak House", "Burger King", "Taco Bell"];
+let restaurantArray = ["McDonalds", "acctually I'm Really Not Hungry", "Applebee's", "Ruth Chris Steak House", "Burger King", "Taco Bell"];
 let transportationArray = ["Car", " Airplane", "Helicopter", "Moped", "These Feet are made for walking","Rickshaw"];
 let entertainmentArray = ["Baseball Game", "Movie Theater", "Who am I kidding, I'm just gonna be looking at my phone", "Concert", "Comedy Show", "Long Hike"];
 
@@ -86,15 +86,29 @@ function pickTransportation(anArray,string1){
      
  }
 
- 
+ function tripRollup(){
+     console.log(`Here is a roll up of your upcoming trip, you are going to the ${destination} and you will get there via ${transportation}. You will get a bite to eat at ${restaurant}. After chow enjoy the ${entertainment}!`)
+     let userInput = prompt("Are you happy with your trip? Please Enter Yes or No")
+     if (userInput === "No"){
+         x=prompt('Okay lets fix your trip, which part do you want to change? Press "1" for Destination, Press "2" for Restaurant, Press "3" for Transportation, and Press "4" for Entertainment')
+
+
+     }else {
+         console.log("Enjoy your trip")
+     }
+ }
+
+function makeChange(){
+
+}
 
 
 
-
-pickDestination(destinationArray,"Destination");
-pickRestaurant(restaurantArray, "Restaurant");
-pickTransportation(transportationArray,"Transportation")
-pickEntertainment(entertainmentArray,"Entertainment")
+//pickDestination(destinationArray,"Destination");
+//pickRestaurant(restaurantArray, "Restaurant");
+//pickTransportation(transportationArray,"Transportation")
+//pickEntertainment(entertainmentArray,"Entertainment")
+tripRollup()
 
 
 
