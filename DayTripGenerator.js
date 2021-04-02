@@ -48,22 +48,6 @@ function selectAnOption(anArray,string1){
 }
 
 
-// destination = pickSubject(destinationArray, , destination)
-// restaurant = pickSubject(restaurantArray, , destination)
-// transportation = pickSubject(transportationArray, , destination)
-
-// function pickSubject(anArray, string1, theSubject){
-//     let userInput = "No"
-//     console.log("Lets get ready to plan the best trip ever, I hope you are ready!");
-//     console.log(`Lets figure out ${theSubject}` );    
-//     while (userInput === "No"){
-//         choice =selectAnOption(anArray,string1);
-//         userInput = prompt(`Are you happy with ${theSubject} as your destination? Please type "Yes", or "No"`);
-//     }
-//     console.log(`So you are headed to ${theSubject}`);
-//     return choice;
-// }
-
 function pickDestination(anArray,string1){
    let userInput = "No"
     console.log("Lets get ready to plan the best trip ever, I hope you are ready!");
@@ -87,7 +71,7 @@ function pickRestaurant(anArray,string1){
      console.log(`You will be eating at ${restaurant}`)
  }
 
- //
+ 
 function pickTransportation(anArray,string1){
     let userInput = "No"
      console.log(`${destination} is pretty far!`);
