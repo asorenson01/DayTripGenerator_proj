@@ -7,10 +7,16 @@ let entertainmentArray = ["Baseball Game", "Movie Theater", "Who am I kidding, I
 
 //list of declared varriables
 
+let destination;
+let restaurant;
+let transportation;
+let entertainment;
+
 
 
 //functions
 
+//Option should equal Destination, Restaurant, Transportation, or Entertainment
 function randomNumber(option1){
     let x;
     x = prompt("Press Enter to Randomly Select a " + option1);
@@ -19,6 +25,16 @@ function randomNumber(option1){
 }
 
 
+function selectAnOption(anArray,option1){
+    let result;
+    let ranNum;
+    ranNum = randomNumber(option1)
+    result = anArray[ranNum]
+    return result;    
+}
+
+let test = selectAnOption(destinationArray,"Restaurant")
+console.log(test)
 
 
 
